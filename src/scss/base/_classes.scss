@@ -1,0 +1,47 @@
+/*---------------------------------- Classes + Extends ----------------------------------------------*/
+// .debug {
+//   @include debug(rgba(116, 116, 116, 0.185), rgb(112, 0, 0));
+//   pointer-events: none;
+// }
+
+.container {
+  @include wrapper();
+}
+
+.row {
+  @include row-flex();
+}
+
+.row-center {
+  @extend .row;
+  justify-content: center;
+}
+
+.box {
+  @include col();
+}
+
+.f-size {
+  font-size: 3.188rem;
+  @include xs(font-size, 2rem);
+}
+
+%flex {
+  display: flex;
+}
+
+%flex-jcent {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-mid {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

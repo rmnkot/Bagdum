@@ -1,0 +1,15 @@
+/*-------------------------------------  Contacts  ------------------------------------------*/
+.contacts {
+  background-image: url(../img/bg/joinUs-bg.jpg);
+  padding: 141px 0 89px;
+  @include xs(padding, 60px 0 50px);
+
+  & .text-block {
+    margin-bottom: 65px;
+    @include xs(margin-bottom, 40px);
+  }
+
+  & .text-block__title--light {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,34 @@
+/*-------------------------------------  Clients  ------------------------------------------*/
+.clients {
+  @include var(color, clr-ntrl-min);
+  background-image: url(../img/bg/clients-bg.jpg);
+  padding: 122px 0 120px;
+  @include xs(padding, 60px 0 40px);
+
+  &__header {
+    text-align: left;
+    max-width: 936px;
+    @include sm(text-align, center);
+  }
+
+  &__logo {
+    @extend %flex-center;
+    @include size(3);
+    @include size-sm(6);
+    @include size-xs(12);
+    padding-bottom: 50px;
+  }
+
+  &__dots {
+    @include size(12);
+    @extend %flex-center;
+
+    &__item {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      @include var(background-color, clr-ntrl-min);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+/*----------------------------------- Tags -----------------------------------------------*/
+html {
+  font-size: $fs-base;
+  // overflow-x: hidden;
+}
+
+body {
+  // overflow-x: hidden;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  @include var(color, clr-base-lt);
+  @include var(background-color, clr-ntrl-min);
+}
+
+h2 {
+  font-family: 'Vidaloka', serif;
+  font-size: $fs-h2;
+  @include var(color, clr-base-dk);
+  @include sm(font-size, 2rem);
+  @include xs(font-size, 1.3rem);
+}

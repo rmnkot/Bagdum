@@ -1,0 +1,29 @@
+/*---------------------------------- Section elements ----------------------------------------------*/
+.text-block {
+  margin-bottom: 117px;
+  text-align: center;
+  max-width: 745px;
+  @include xs(margin-bottom, 60px);
+
+  &__title {
+    margin-bottom: 25px;
+
+    &--light {
+      @extend .text-block__title;
+      @include var(color,
+      clr-ntrl-min);
+    }
+  }
+
+  &__subtitle {
+    line-height: 1.625;
+    display: inline-block;
+    @include xs(font-size, 0.83rem);
+
+    &--narrow {
+      @extend .text-block__subtitle;
+      max-width: 440px;
+    }
+
+  }
+}

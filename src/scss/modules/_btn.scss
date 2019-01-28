@@ -1,0 +1,41 @@
+/*-------------------------------------  Button  ------------------------------------------*/
+.gotop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  width: 90px;
+  height: 90px;
+  background-color: #b4b3b3;
+  border-radius: 50%;
+  -webkit-box-shadow: 2.5px 4.33px 51px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 2.5px 4.33px 51px 0px rgba(0, 0, 0, 0.38);
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+
+  @include xs-block() {
+    width: 80px;
+    height: 80px;
+    bottom: 25px;
+  }
+}
+
+.gotop-btn:hover {
+  background-color: #c0bb7e;
+  -webkit-box-shadow: 2.5px 4.33px 51px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 2.5px 4.33px 51px 0px rgba(0, 0, 0, 0.6);
+}
+
+.arrow {
+  display: block;
+  width: 35px;
+  @include var(fill, clr-primary);
+  @include var(stroke, clr-primary);
+  stroke-width: 5;
+  stroke-linejoin: round;
+  @include xs(width, 32px);
+}

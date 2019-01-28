@@ -1,0 +1,75 @@
+/*-------------------------------------  Service  ------------------------------------------*/
+.service {
+  padding: 136px 0 140px;
+  @include xs(padding, 60px 0 40px);
+
+  &__card {
+    @include size(4);
+    @include size-md(6);
+    @include size-xs(12);
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 87px 40px 60px;
+    @include var(color, clr-ntrl-min);
+    cursor: pointer;
+    transition: 0.25s;
+    @include xs(padding, 40px 25px 30px);
+
+    &:nth-child(1) {
+      background-color: rgb(255, 82, 82);
+    }
+
+    &:nth-child(2) {
+      background-color: rgb(76, 175, 80);
+    }
+
+    &:nth-child(3) {
+      background-color: rgb(103, 58, 183);
+    }
+
+    &:nth-child(4) {
+      background-color: rgb(33, 150, 243);
+    }
+
+    &:nth-child(5) {
+      background-color: rgb(255, 82, 218);
+    }
+
+    &:nth-child(6) {
+      background-color: rgb(0, 188, 212);
+    }
+
+    &__title {
+      font-size: $fs-h3;
+      font-family: 'Vidaloka', serif;
+      margin-bottom: 28px;
+      @include xs(margin-bottom, 20px);
+    }
+
+    &__description {
+      font-size: 0.813rem;
+      line-height: 1.846;
+      margin-bottom: 32px;
+      @include xs(margin-bottom, 20px);
+    }
+
+    &__btn {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: underline;
+      @include var(color, clr-primary);
+      transition: color 0.25s;
+    }
+
+    &:hover {
+      background-color: rgb(255, 218, 0);
+      color: black;
+    }
+
+    &:hover .service__card__btn {
+      color: black;
+    }
+
+
+  }
+}

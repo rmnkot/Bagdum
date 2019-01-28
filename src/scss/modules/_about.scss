@@ -1,0 +1,69 @@
+/*-------------------------------------  About  ------------------------------------------*/
+.about {
+  text-align: center;
+  padding: 127px 0 122px;
+  @include sm(padding, 60px 0 40px);
+
+  &__title {
+    margin-bottom: 16px;
+
+    &--bottom {
+      margin-bottom: 101px;
+      @include sm(margin-bottom, 50px);
+    }
+
+    &--color {
+      @include var(color, clr-primary);
+      text-decoration: underline;
+    }
+  }
+
+  &__card {
+    @extend %flex-jcent;
+    @include size(4);
+    @include size-md(6);
+    @include size-sm(12);
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    @include sm-block() {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    &:hover .about__card__icon {
+      @include var(color, clr-primary);
+    }
+
+    &__icon {
+      font-size: 2.5rem;
+      margin-right: 30px;
+      transition: color 0.25s;
+      @include sm(margin-right, 15px);
+    }
+
+    &__block {
+      max-width: 266px;
+      border-left: 2px solid #f1f1f1;
+      padding-left: 30px;
+      text-align: left;
+      @include sm(padding-left, 15px);
+    }
+
+    &__title {
+      display: inline-block;
+      font-family: 'Vidaloka', serif;
+      font-size: 0.938rem;
+      @include var(color, clr-base-dk);
+      margin-bottom: 30px;
+      @include sm(margin-bottom, 15px);
+    }
+
+    &__description {
+      font-size: 0.813rem;
+      line-height: 1.846;
+      text-align: justify;
+    }
+  }
+}

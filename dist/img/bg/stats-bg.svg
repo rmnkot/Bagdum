@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="1920px" height="400px" viewBox="0 0 1920 400">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feImage x="-2" y="0" width="1929" height="400" preserveApectRatio="none" xlink:href="#symbol0"/>
+<feComposite in="ptImage1" in2="SourceAlpha" operator="in" result="ptOverlay1"/>
+<feComponentTransfer in="ptOverlay1" result="ptOpacity1">
+    <feFuncA type="linear" slope="0.06"/>
+</feComponentTransfer>
+<feBlend in="ptOpacity1" in2="SourceGraphic" mode="normal" result="patternOverlay1"/>
+</filter>
+<pattern id="PSPattern_0" patternTransform="scale(1.29)" x="0.78" y="-1529.46" width="8" height="8" patternUnits="userSpaceOnUse"><image x="0" y="0" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAMAAADz0U65AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAPFBMVEU4ODjf39/////c3NzY2Ng6OjrZ2dk7Ozvg4ODa2to9PT3h4eE/Pz/i4uLd3d1AQEDe3t5CQ0Pj4+NEREROaksoAAAAAWJLR0QCZgt8ZAAAADVJREFUCNdjYGBkAgFmBhZWCIuBiY2dA8Jg4uTihjCYmHl4IQwmPn5eCINJQFCIAaySiVEYACE9AScQlZfSAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTExLTAxVDE4OjA5OjE5KzAwOjAwvfwP3AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0xMS0wMVQxODowOToxOSswMDowMMyht2AAAAAASUVORK5CYII=" /></pattern>
+<defs>
+<rect x="0" y="0" width="1929" height="400" id="symbol0" fill="url(#PSPattern_0)"/></defs>
+<path fillRule="evenodd" d="M 1927 400C 1927 400-1 400-1 400-1 400-2-0-2-0-2-0 1926-0 1926-0 1926-0 1927 400 1927 400Z" fill="rgb(22,24,29)" filter="url(#filter0)"/></svg>

@@ -1,0 +1,90 @@
+/*--------------------------------- Local fonts ------------------------------------------*/
+
+//  Importing internal fonts here
+@font-face {
+  font-family: "BacktoBlackDemo";
+  src: url('../fonts/Back_to_Black_Demo.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.woff?71686203') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Vidaloka', serif;
+// font-family: 'BacktoBlackDemo', sans-serif;
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  // margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-tag:before {
+  content: '\e800';
+}
+
+.icon-comment:before {
+  content: '\e801';
+}
+
+.icon-twitter:before {
+  content: '\f099';
+}
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+.icon-linkedin:before {
+  content: '\f0e1';
+}
+
+.icon-download-cloud:before {
+  content: '\f0ed';
+}
+
+.icon-cubes:before {
+  content: '\f1b3';
+}
+
+.icon-lifebuoy:before {
+  content: '\f1cd';
+}
+
+.icon-reddit-alien:before {
+  content: '\f281';
+}

@@ -1,0 +1,158 @@
+/*-------------------------------------  Header  ------------------------------------------*/
+.nav-bar {
+  padding-top: 65px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 277px;
+  @include md(padding-top, 20px);
+
+  @include sm-block() {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  @include xs-block() {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 170px;
+  }
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 278px;
+  position: relative;
+  @include var(color, clr-ntrl-min);
+  @include xs(padding-bottom, 220px);
+
+  &__logo {
+    @include size(3);
+    @include size-sm(4);
+    @include size-xs(5);
+    cursor: pointer;
+    text-align: left;
+  }
+
+  &__nav {
+    @include size(7);
+    @extend %flex-mid;
+    justify-content: space-around;
+    font-family: 'Vidaloka', serif;
+    font-size: 0.813rem;
+    text-transform: uppercase;
+
+    @include sm-block() {
+      display: none;
+    }
+
+    &__item {
+      cursor: pointer;
+      transition: color 0.25s;
+      position: relative;
+
+      &::after {
+        @include pseudo();
+        width: 100%;
+        height: 1px;
+        top: 53px;
+        @include var(background-color, clr-primary);
+        transform: scale(0);
+        transition: 0.25s;
+      }
+
+      &:hover::after {
+        transform: scale(1);
+      }
+
+      &:hover {
+        @include var(color, clr-primary);
+      }
+    }
+  }
+
+  &__search {
+    @include size(2);
+    @extend %flex-mid;
+
+    @include sm-block() {
+      display: none;
+    }
+
+
+    &__input {
+      box-sizing: border-box;
+      margin-right: 25px;
+      min-width: 30px;
+      border: none;
+      border-right: 1px solid #ffffff;
+      height: 30px;
+      padding: 0 5px;
+      background-color: transparent;
+      @include var(color, clr-ntrl-min);
+      font-size: 0.8rem;
+      transition: background-color 0.25s;
+
+      @include md-block() {
+        margin-right: 10px;
+      }
+
+      ;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    &__btn {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+    }
+
+    &__img {
+      width: 15px;
+      height: 15px;
+      @include var(fill, clr-ntrl-min);
+      position: relative;
+      cursor: pointer;
+      transition: fill 0.25s;
+
+      &:hover {
+        @include var(fill, clr-primary);
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'BacktoBlackDemo', sans-serif;
+    font-size: 6.875rem;
+    line-height: 100%;
+    display: block;
+    @include md(font-size, 5rem);
+    @include sm(font-size, 4rem);
+    @include xs(font-size, 2.5rem);
+
+    &--lg {
+      @extend .header__text;
+      font-size: 17.5rem;
+      margin-top: 30px;
+      @include md(font-size, 13.5rem);
+      @include sm(font-size, 9rem);
+      @include xs(font-size, 5rem);
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+}
