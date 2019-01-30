@@ -576,6 +576,7 @@ h2 {
   position: absolute;
   top: 0;
   height: 100%;
+  width: 100%;
   z-index: -1;
 }
 
@@ -1092,6 +1093,10 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .nav-bar {
+    padding-top: 20px;
+  }
+
   .header__search__input {
     margin-right: 10px;
   }
