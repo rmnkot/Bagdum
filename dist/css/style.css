@@ -1071,9 +1071,7 @@ h2 {
   }
 
   .overlay__title {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    text-shadow: 0 0 5px #ffda00;
+    display: none;
   }
 
   .overlay__description {
@@ -1223,10 +1221,6 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
-  }
-
-  .overlay__title {
-    font-size: 1.05rem;
   }
 
   .overlay__description {

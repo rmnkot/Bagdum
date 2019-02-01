@@ -552,6 +552,7 @@ h2 {
     position: absolute;
     top: 0;
     height: 100%;
+    width: 100%;
     z-index: -1; }
     .header__slider__img {
       width: 100%;
@@ -811,12 +812,7 @@ h2 {
         margin-bottom: 20px; } }
     @media screen and (max-width: 1100px) {
       .overlay__title {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-        text-shadow: 0 0 5px #ffda00; } }
-    @media screen and (max-width: 780px) {
-      .overlay__title {
-        font-size: 1.05rem; } }
+        display: none; } }
     @media screen and (max-width: 560px) {
       .overlay__title {
         font-size: 1.5rem;
